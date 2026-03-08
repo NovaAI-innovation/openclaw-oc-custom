@@ -1,0 +1,4 @@
+- r2_download: ./tools/r2_download.sh <key> (downloads brief from R2 to stdout).
+- dag_process: ./tools/dag_process.sh [<key>] (full workflow: download, SnapshotV1, DAG build, populate global, memory save, schedule).
+- global_populate: ./tools/global_populate.sh <snapshot.json> (merges to state graph, validates, saves).
+- graph_query: ./tools/graph_query.sh <task_id> (queries node from global graph).

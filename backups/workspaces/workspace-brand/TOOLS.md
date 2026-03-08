@@ -1,0 +1,1 @@
+# TOOLS.md\n\n- graph_query.sh: Query global by domain_id (jq filter).\n- design_tools.sh: Execute design tasks (asset gen).\n- run_update.sh: Update run.json/events.jsonl, upload.\n- graph_merge.sh: Add produces/spawns edges, version++ global, append indexes.

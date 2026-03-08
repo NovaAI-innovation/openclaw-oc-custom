@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "run_status": {"type": "string"},
+    "root_dag_id": {"type": "string"},
+    "orchestrator_id": {"type": "string"},
+    "started_at": {"type": "string"},
+    "ended_at": {"type": "string"},
+    "active_node_ids": {"type": "array", "items": {"type": "string"}},
+    "completed_node_ids": {"type": "array", "items": {"type": "string"}},
+    "failed_node_ids": {"type": "array", "items": {"type": "string"}},
+    "blocked_node_ids": {"type": "array", "items": {"type": "string"}},
+    "event_stream_ref": {"type": "object", "properties": {"store": {"type": "string"}, "bucket": {"type": "string"}, "key": {"type": "string"}}},
+    "metrics": {"type": "object", "properties": {"total_nodes": {"type": "integer"}, "completed_nodes": {"type": "integer"}, "failed_nodes": {"type": "integer"}}}
+  }
+}

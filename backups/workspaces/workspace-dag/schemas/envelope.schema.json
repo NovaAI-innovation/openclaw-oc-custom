@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {"type": "string"},
+    "artifact_type": {"type": "string"},
+    "artifact_id": {"type": "string"},
+    "org_id": {"type": "string"},
+    "project_id": {"type": "string"},
+    "client_id": {"type": "string"},
+    "domain_id": {"type": "string"},
+    "created_at": {"type": "string", "format": "date-time"},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "created_by": {"type": "object", "properties": {"actor_type": {"type": "string"}, "actor_id": {"type": "string"}}},
+    "source": {"type": "object", "properties": {"source_type": {"type": "string"}, "source_ref": {"type": "string"}}},
+    "status": {"type": "string"},
+    "version": {"type": "object", "properties": {"artifact_version": {"type": "integer"}, "parent_artifact_id": {"type": "string"}, "parent_artifact_version": {"type": "integer"}, "content_hash": {"type": "string"}}},
+    "provenance": {"type": "object", "properties": {"generated_from": {"type": "array", "items": {"type": "string"}}, "derived_artifacts": {"type": "array", "items": {"type": "string"}}, "artifact_refs": {"type": "array", "items": {"type": "object"}}}},
+    "visibility": {"type": "object", "properties": {"scope": {"type": "string"}, "allowed_scopes": {"type": "array", "items": {"type": "string"}}, "denied_scopes": {"type": "array", "items": {"type": "string"}}}},
+    "tags": {"type": "array", "items": {"type": "string"}}
+  },
+  "required": ["schema_version", "artifact_type", "artifact_id", "org_id", "created_at", "updated_at", "created_by", "source", "status", "version", "provenance", "visibility", "tags"]
+}

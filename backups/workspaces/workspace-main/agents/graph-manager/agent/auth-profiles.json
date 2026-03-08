@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "profiles": {
+    "google:default": {
+      "type": "api_key",
+      "provider": "google",
+      "key": "AIzaSyCKzNNINBC-IwGExdDlsa1turVE-OLX3SI"
+    }
+  },
+  "usageStats": {
+    "google:default": {
+      "errorCount": 0,
+      "lastUsed": 1773000406712
+    }
+  }
+}

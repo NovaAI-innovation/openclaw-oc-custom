@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "properties": {
+    "artifact_id": {"type": "string"},
+    "artifact_type": {"type": "string"},
+    "schema_version": {"type": "string"},
+    "org_id": {"type": "string"},
+    "project_id": {"type": "string"},
+    "client_id": {"type": "string"},
+    "domain_id": {"type": "string"},
+    "artifact_version": {"type": "integer"},
+    "status": {"type": "string"},
+    "created_at": {"type": "string"},
+    "updated_at": {"type": "string"},
+    "title": {"type": "string"},
+    "path_hint": {"type": "string"},
+    "content_hash": {"type": "string"},
+    "derived_from": {"type": "array", "items": {"type": "string"}},
+    "tags": {"type": "array", "items": {"type": "string"}}
+  }
+}

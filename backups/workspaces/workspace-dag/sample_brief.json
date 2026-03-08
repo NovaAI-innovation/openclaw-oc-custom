@@ -1,0 +1,24 @@
+{
+  "project": "Sample",
+  "tasks": [
+    {
+      "id": "t1",
+      "description": "Sample Task 1",
+      "dependencies": []
+    },
+    {
+      "id": "t2",
+      "description": "Sample Task 2",
+      "dependencies": [
+        "t1"
+      ]
+    }
+  ],
+  "brief": {
+    "routing_hints": {
+      "candidate_future_domains": [
+        "domain_design_brand"
+      ]
+    }
+  }
+}

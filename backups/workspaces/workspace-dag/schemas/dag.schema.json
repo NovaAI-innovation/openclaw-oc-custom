@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "properties": {
+    "dag_type": {"type": "string"},
+    "dag_status": {"type": "string"},
+    "root_plan_id": {"type": "string"},
+    "graph_manager_id": {"type": "string"},
+    "validation": {"type": "object", "properties": {"is_acyclic": {"type": "boolean"}, "validated_at": {"type": "string"}, "validation_errors": {"type": "array", "items": {"type": "string"}}}},
+    "nodes": {"type": "array", "items": {"type": "object", "properties": {"node_id": {"type": "string"}, "node_type": {"type": "string"}, "ref_id": {"type": "string"}, "domain_id": {"type": "string"}, "label": {"type": "string"}, "status": {"type": "string"}, "priority": {"type": "string"}, "required_capabilities": {"type": "array", "items": {"type": "string"}}, "input_artifact_refs": {"type": "array", "items": {"type": "string"}}, "output_artifact_specs": {"type": "array", "items": {"type": "object", "properties": {"artifact_type": {"type": "string"}, "name": {"type": "string"}}}}, "metadata": {"type": "object"}}}}, 
+    "edges": {"type": "array", "items": {"type": "object", "properties": {"edge_id": {"type": "string"}, "from_node_id": {"type": "string"}, "to_node_id": {"type": "string"}, "edge_type": {"type": "string"}, "required": {"type": "boolean"}, "metadata": {"type": "object"}}}}
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "properties": {
+    "graph_type": {"type": "string"},
+    "graph_manager_id": {"type": "string"},
+    "nodes": {"type": "array", "items": {"type": "object", "properties": {"node_id": {"type": "string"}, "node_type": {"type": "string"}, "domain_id": {"type": "string"}, "properties": {"type": "object"}}}}, 
+    "edges": {"type": "array", "items": {"type": "object", "properties": {"edge_id": {"type": "string"}, "from_node_id": {"type": "string"}, "to_node_id": {"type": "string"}, "edge_type": {"type": "string"}, "properties": {"type": "object"}}}}
+  }
+}

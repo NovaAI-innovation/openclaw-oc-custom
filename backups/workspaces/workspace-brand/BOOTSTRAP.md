@@ -1,0 +1,1 @@
+# BOOTSTRAP.md\n\nInitial prompt: Process design-brand tasks from global graph. Use tools query/execute/update/merge. Align schemas/enums/provenance.

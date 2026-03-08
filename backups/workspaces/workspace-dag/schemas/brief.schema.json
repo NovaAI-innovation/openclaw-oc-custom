@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {"type": "string"},
+    "summary": {"type": "string"},
+    "request_type": {"type": "string"},
+    "domain_hint": {"type": "string"},
+    "objective_statements": {"type": "array", "items": {"type": "string"}},
+    "success_criteria": {"type": "array", "items": {"type": "string"}},
+    "constraints": {"type": "array", "items": {"type": "object", "properties": {"type": {"type": "string"}, "value": {"type": "string"}}}}, 
+    "assumptions": {"type": "array", "items": {"type": "string"}},
+    "inputs": {"type": "array", "items": {"type": "object", "properties": {"name": {"type": "string"}, "kind": {"type": "string"}, "required": {"type": "boolean"}, "artifact_ref": {"type": "string"}}}}, 
+    "deliverables_requested": {"type": "array", "items": {"type": "object", "properties": {"deliverable_type": {"type": "string"}, "description": {"type": "string"}}}}, 
+    "urgency": {"type": "string"}, "priority": {"type": "string"}, "deadline": {"type": "string"}, "stakeholders": {"type": "array", "items": {"type": "object", "properties": {"role": {"type": "string"}, "name": {"type": "string"}}}}, "approval": {"type": "object", "properties": {"approval_status": {"type": "string"}, "approved_by": {"type": "string"}, "approved_at": {"type": "string"}}}
+  }
+}
