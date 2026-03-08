@@ -1,0 +1,294 @@
+{
+  "heartbeat": {
+    "defaultAgentId": "main",
+    "agents": [
+      {
+        "agentId": "main",
+        "enabled": true,
+        "every": "30m",
+        "everyMs": 1800000
+      }
+    ]
+  },
+  "channelSummary": [
+    "Telegram: configured",
+    "  - default (token:config)"
+  ],
+  "queuedSystemEvents": [],
+  "sessions": {
+    "paths": [
+      "/root/.openclaw/agents/main/sessions/sessions.json"
+    ],
+    "count": 0,
+    "defaults": {
+      "model": "gemini-3.1-pro-preview",
+      "contextTokens": 200000
+    },
+    "recent": [],
+    "byAgent": [
+      {
+        "agentId": "main",
+        "path": "/root/.openclaw/agents/main/sessions/sessions.json",
+        "count": 0,
+        "recent": []
+      }
+    ]
+  },
+  "os": {
+    "platform": "linux",
+    "arch": "x64",
+    "release": "6.8.0-100-generic",
+    "label": "linux 6.8.0-100-generic (x64)"
+  },
+  "update": {
+    "root": "/usr/lib/node_modules/openclaw",
+    "installKind": "package",
+    "packageManager": "pnpm",
+    "deps": {
+      "manager": "pnpm",
+      "status": "unknown",
+      "lockfilePath": "/usr/lib/node_modules/openclaw/pnpm-lock.yaml",
+      "markerPath": "/usr/lib/node_modules/openclaw/node_modules/.modules.yaml",
+      "reason": "lockfile missing"
+    },
+    "registry": {
+      "latestVersion": "2026.3.7"
+    }
+  },
+  "updateChannel": "stable",
+  "updateChannelSource": "default",
+  "memory": {
+    "agentId": "main",
+    "backend": "builtin",
+    "files": 0,
+    "chunks": 0,
+    "dirty": true,
+    "workspaceDir": "/root/.openclaw/workspace",
+    "dbPath": "/root/.openclaw/memory/main.sqlite",
+    "provider": "gemini",
+    "model": "gemini-embedding-001",
+    "requestedProvider": "auto",
+    "sources": [
+      "memory"
+    ],
+    "extraPaths": [],
+    "sourceCounts": [
+      {
+        "source": "memory",
+        "files": 0,
+        "chunks": 0
+      }
+    ],
+    "cache": {
+      "enabled": true,
+      "entries": 0
+    },
+    "fts": {
+      "enabled": true,
+      "available": true
+    },
+    "vector": {
+      "enabled": true,
+      "available": true,
+      "extensionPath": "/usr/lib/node_modules/openclaw/node_modules/sqlite-vec-linux-x64/vec0.so"
+    },
+    "batch": {
+      "enabled": false,
+      "failures": 0,
+      "limit": 2,
+      "wait": true,
+      "concurrency": 2,
+      "pollIntervalMs": 2000,
+      "timeoutMs": 3600000
+    },
+    "custom": {
+      "searchMode": "hybrid",
+      "readonlyRecovery": {
+        "attempts": 0,
+        "successes": 0,
+        "failures": 0
+      }
+    }
+  },
+  "memoryPlugin": {
+    "enabled": true,
+    "slot": "memory-core"
+  },
+  "gateway": {
+    "mode": "local",
+    "url": "ws://127.0.0.1:18789",
+    "urlSource": "local loopback",
+    "misconfigured": false,
+    "reachable": true,
+    "connectLatencyMs": 58,
+    "self": {
+      "host": "srv1300572",
+      "ip": "76.13.103.104",
+      "version": "2026.3.7",
+      "platform": "linux 6.8.0-100-generic"
+    },
+    "error": null,
+    "authWarning": null
+  },
+  "gatewayService": {
+    "label": "systemd",
+    "installed": false,
+    "managedByOpenClaw": false,
+    "externallyManaged": false,
+    "loadedText": "disabled",
+    "runtimeShort": "stopped (state inactive)"
+  },
+  "nodeService": {
+    "label": "systemd",
+    "installed": false,
+    "managedByOpenClaw": false,
+    "externallyManaged": false,
+    "loadedText": "disabled",
+    "runtimeShort": "stopped (state inactive)"
+  },
+  "agents": {
+    "defaultId": "main",
+    "agents": [
+      {
+        "id": "main",
+        "workspaceDir": "/root/.openclaw/workspace",
+        "bootstrapPending": true,
+        "sessionsPath": "/root/.openclaw/agents/main/sessions/sessions.json",
+        "sessionsCount": 0,
+        "lastUpdatedAt": null,
+        "lastActiveAgeMs": null
+      }
+    ],
+    "totalSessions": 0,
+    "bootstrapPendingCount": 1
+  },
+  "securityAudit": {
+    "ts": 1772982380113,
+    "summary": {
+      "critical": 0,
+      "warn": 2,
+      "info": 1
+    },
+    "findings": [
+      {
+        "checkId": "summary.attack_surface",
+        "severity": "info",
+        "title": "Attack surface summary",
+        "detail": "groups: open=0, allowlist=1\ntools.elevated: enabled\nhooks.webhooks: disabled\nhooks.internal: disabled\nbrowser control: enabled\ntrust model: personal assistant (one trusted operator boundary), not hostile multi-tenant on one shared gateway"
+      },
+      {
+        "checkId": "gateway.trusted_proxies_missing",
+        "severity": "warn",
+        "title": "Reverse proxy headers are not trusted",
+        "detail": "gateway.bind is loopback and gateway.trustedProxies is empty. If you expose the Control UI through a reverse proxy, configure trusted proxies so local-client checks cannot be spoofed.",
+        "remediation": "Set gateway.trustedProxies to your proxy IPs or keep the Control UI local-only."
+      },
+      {
+        "checkId": "fs.state_dir.perms_readable",
+        "severity": "warn",
+        "title": "State dir is readable by others",
+        "detail": "/root/.openclaw mode=755; consider restricting to 700.",
+        "remediation": "chmod 700 /root/.openclaw"
+      }
+    ]
+  },
+  "secretDiagnostics": [],
+  "health": {
+    "ok": true,
+    "ts": 1772982380510,
+    "durationMs": 1454,
+    "channels": {
+      "telegram": {
+        "configured": true,
+        "running": false,
+        "lastStartAt": null,
+        "lastStopAt": null,
+        "lastError": null,
+        "tokenSource": "none",
+        "probe": {
+          "ok": true,
+          "status": null,
+          "error": null,
+          "elapsedMs": 1454,
+          "bot": {
+            "id": 8698304821,
+            "username": "ballistasbot_bot",
+            "canJoinGroups": true,
+            "canReadAllGroupMessages": false,
+            "supportsInlineQueries": false
+          },
+          "webhook": {
+            "url": "",
+            "hasCustomCert": false
+          }
+        },
+        "lastProbeAt": 1772982380510,
+        "mode": null,
+        "accountId": "default",
+        "accounts": {
+          "default": {
+            "configured": true,
+            "running": false,
+            "lastStartAt": null,
+            "lastStopAt": null,
+            "lastError": null,
+            "tokenSource": "none",
+            "probe": {
+              "ok": true,
+              "status": null,
+              "error": null,
+              "elapsedMs": 1454,
+              "bot": {
+                "id": 8698304821,
+                "username": "ballistasbot_bot",
+                "canJoinGroups": true,
+                "canReadAllGroupMessages": false,
+                "supportsInlineQueries": false
+              },
+              "webhook": {
+                "url": "",
+                "hasCustomCert": false
+              }
+            },
+            "lastProbeAt": 1772982380510,
+            "mode": null,
+            "accountId": "default"
+          }
+        }
+      }
+    },
+    "channelOrder": [
+      "telegram"
+    ],
+    "channelLabels": {
+      "telegram": "Telegram"
+    },
+    "heartbeatSeconds": 1800,
+    "defaultAgentId": "main",
+    "agents": [
+      {
+        "agentId": "main",
+        "isDefault": true,
+        "heartbeat": {
+          "enabled": true,
+          "every": "30m",
+          "everyMs": 1800000,
+          "prompt": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+          "target": "none",
+          "ackMaxChars": 300
+        },
+        "sessions": {
+          "path": "/root/.openclaw/agents/main/sessions/sessions.json",
+          "count": 0,
+          "recent": []
+        }
+      }
+    ],
+    "sessions": {
+      "path": "/root/.openclaw/agents/main/sessions/sessions.json",
+      "count": 0,
+      "recent": []
+    }
+  },
+  "lastHeartbeat": null
+}

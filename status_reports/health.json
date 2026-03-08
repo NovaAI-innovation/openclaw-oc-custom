@@ -1,0 +1,97 @@
+{
+  "ok": true,
+  "ts": 1772982399304,
+  "durationMs": 178,
+  "channels": {
+    "telegram": {
+      "configured": true,
+      "running": false,
+      "lastStartAt": null,
+      "lastStopAt": null,
+      "lastError": null,
+      "tokenSource": "none",
+      "probe": {
+        "ok": true,
+        "status": null,
+        "error": null,
+        "elapsedMs": 177,
+        "bot": {
+          "id": 8698304821,
+          "username": "ballistasbot_bot",
+          "canJoinGroups": true,
+          "canReadAllGroupMessages": false,
+          "supportsInlineQueries": false
+        },
+        "webhook": {
+          "url": "",
+          "hasCustomCert": false
+        }
+      },
+      "lastProbeAt": 1772982399303,
+      "mode": null,
+      "accountId": "default",
+      "accounts": {
+        "default": {
+          "configured": true,
+          "running": false,
+          "lastStartAt": null,
+          "lastStopAt": null,
+          "lastError": null,
+          "tokenSource": "none",
+          "probe": {
+            "ok": true,
+            "status": null,
+            "error": null,
+            "elapsedMs": 177,
+            "bot": {
+              "id": 8698304821,
+              "username": "ballistasbot_bot",
+              "canJoinGroups": true,
+              "canReadAllGroupMessages": false,
+              "supportsInlineQueries": false
+            },
+            "webhook": {
+              "url": "",
+              "hasCustomCert": false
+            }
+          },
+          "lastProbeAt": 1772982399303,
+          "mode": null,
+          "accountId": "default"
+        }
+      }
+    }
+  },
+  "channelOrder": [
+    "telegram"
+  ],
+  "channelLabels": {
+    "telegram": "Telegram"
+  },
+  "heartbeatSeconds": 1800,
+  "defaultAgentId": "main",
+  "agents": [
+    {
+      "agentId": "main",
+      "isDefault": true,
+      "heartbeat": {
+        "enabled": true,
+        "every": "30m",
+        "everyMs": 1800000,
+        "prompt": "Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.",
+        "target": "none",
+        "ackMaxChars": 300
+      },
+      "sessions": {
+        "path": "/root/.openclaw/agents/main/sessions/sessions.json",
+        "count": 0,
+        "recent": []
+      }
+    }
+  ],
+  "sessions": {
+    "path": "/root/.openclaw/agents/main/sessions/sessions.json",
+    "count": 0,
+    "recent": []
+  }
+}

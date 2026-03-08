@@ -1,0 +1,16 @@
+Warning: Permanently added '76.13.103.104' (ED25519) to the list of known hosts.
+[openclaw] Failed to start CLI: Error: gateway closed (1006 abnormal closure (no close frame)): no close reason
+Gateway target: ws://127.0.0.1:18789
+Source: local loopback
+Config: /root/.openclaw/openclaw.json
+Bind: loopback
+    at Object.onClose (file:///usr/lib/node_modules/openclaw/dist/call-jim2IS_j.js:3220:10)
+    at WebSocket.<anonymous> (file:///usr/lib/node_modules/openclaw/dist/call-jim2IS_j.js:2422:23)
+    at WebSocket.emit (node:events:508:28)
+    at WebSocket.emitClose (/usr/lib/node_modules/openclaw/node_modules/ws/lib/websocket.js:263:12)
+    at emitErrorAndClose (/usr/lib/node_modules/openclaw/node_modules/ws/lib/websocket.js:1047:13)
+    at ClientRequest.<anonymous> (/usr/lib/node_modules/openclaw/node_modules/ws/lib/websocket.js:886:5)
+    at ClientRequest.emit (node:events:508:28)
+    at emitErrorEvent (node:_http_client:108:11)
+    at Socket.socketErrorListener (node:_http_client:575:5)
+    at Socket.emit (node:events:508:28)

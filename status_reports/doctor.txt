@@ -1,0 +1,78 @@
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+██░▄▄▄░██░▄▄░██░▄▄▄██░▀██░██░▄▄▀██░████░▄▄▀██░███░██
+██░███░██░▀▀░██░▄▄▄██░█░█░██░█████░████░▀▀░██░█░█░██
+██░▀▀▀░██░█████░▀▀▀██░██▄░██░▀▀▄██░▀▀░█░██░██▄▀▄▀▄██
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+                  🦞 OPENCLAW 🦞                    
+ 
+┌  OpenClaw doctor
+│
+◇  Startup optimization ─────────────────────────────────────────────────╮
+│                                                                        │
+│  - NODE_COMPILE_CACHE is not set; repeated CLI runs can be slower on   │
+│    small hosts (Pi/VM).                                                │
+│  - OPENCLAW_NO_RESPAWN is not set to 1; set it to avoid extra startup  │
+│    overhead from self-respawn.                                         │
+│  - Suggested env for low-power hosts:                                  │
+│    export NODE_COMPILE_CACHE=/var/tmp/openclaw-compile-cache           │
+│    mkdir -p /var/tmp/openclaw-compile-cache                            │
+│    export OPENCLAW_NO_RESPAWN=1                                        │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────╯
+│
+◇  Doctor warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - channels.telegram.groupPolicy is "allowlist" but groupAllowFrom (and  │
+│    allowFrom) is empty — all group messages will be silently dropped.    │
+│    Add sender IDs to channels.telegram.groupAllowFrom or                 │
+│    channels.telegram.allowFrom, or set groupPolicy to "open".            │
+│  - channels.telegram.accounts.default.groupPolicy is "allowlist" but     │
+│    groupAllowFrom (and allowFrom) is empty — all group messages will be  │
+│    silently dropped. Add sender IDs to                                   │
+│    channels.telegram.accounts.default.groupAllowFrom or                  │
+│    channels.telegram.accounts.default.allowFrom, or set groupPolicy to   │
+│    "open".                                                               │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+│
+◇  State integrity ─────────────────────────────────────────────────────╮
+│                                                                       │
+│  - State directory permissions are too open (~/.openclaw). Recommend  │
+│    chmod 700.                                                         │
+│  - CRITICAL: OAuth dir missing (~/.openclaw/credentials).             │
+│  - Found 2 orphan transcript file(s) in                               │
+│    ~/.openclaw/agents/main/sessions. They are not referenced by       │
+│    sessions.json and can consume disk over time.                      │
+│                                                                       │
+├───────────────────────────────────────────────────────────────────────╯
+│
+◇  Security ─────────────────────────────────╮
+│                                            │
+│  - No channel security warnings detected.  │
+│  - Run: openclaw security audit --deep     │
+│                                            │
+├────────────────────────────────────────────╯
+│
+◇  Skills status ────────────╮
+│                            │
+│  Eligible: 4               │
+│  Missing requirements: 47  │
+│  Blocked by allowlist: 0   │
+│                            │
+├────────────────────────────╯
+│
+◇  Plugins ──────╮
+│                │
+│  Loaded: 5     │
+│  Disabled: 33  │
+│  Errors: 0     │
+│                │
+├────────────────╯
+Telegram: ok (@ballistasbot_bot) (162ms)
+Agents: main (default)
+Heartbeat interval: 30m (main)
+Session store (main): /root/.openclaw/agents/main/sessions/sessions.json (0 entries)
+Run "openclaw doctor --fix" to apply changes.
+│
+└  Doctor complete.
+

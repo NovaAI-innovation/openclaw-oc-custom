@@ -1,0 +1,31 @@
+[
+  {
+    "host": "srv1300572",
+    "ip": "76.13.103.104",
+    "version": "2026.3.7",
+    "platform": "linux 6.8.0-100-generic",
+    "deviceFamily": "Linux",
+    "modelIdentifier": "x64",
+    "mode": "gateway",
+    "reason": "self",
+    "text": "Gateway: srv1300572 (76.13.103.104) · app 2026.3.7 · mode gateway · reason self",
+    "ts": 1772982402058
+  },
+  {
+    "host": "gateway-client",
+    "version": "2026.3.7",
+    "platform": "linux",
+    "mode": "backend",
+    "deviceId": "6ac575516d009caf4078e49aebfee36a4c3a94ec4bab5d013b6a6cd9b3f4703e",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.read"
+    ],
+    "instanceId": "6ac575516d009caf4078e49aebfee36a4c3a94ec4bab5d013b6a6cd9b3f4703e",
+    "reason": "disconnect",
+    "ts": 1772982399307,
+    "text": "Node: cli · mode probe"
+  }
+]

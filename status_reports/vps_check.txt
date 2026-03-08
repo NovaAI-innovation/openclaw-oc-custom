@@ -1,0 +1,15 @@
+/usr/bin/openclaw
+2026.3.7
+No OpenClaw processes running
+total 40
+drwxr-xr-x 7 root root 4096 Mar  8 09:32 .
+drwx------ 7 root root 4096 Mar  8 10:47 ..
+drwxr-xr-x 3 root root 4096 Mar  8 09:15 agents
+drwxr-xr-x 2 root root 4096 Mar  8 09:06 identity
+drwx------ 2 root root 4096 Mar  8 09:06 logs
+drwxr-xr-x 2 root root 4096 Mar  8 09:09 memory
+-rw------- 1 root root 1524 Mar  8 09:32 openclaw.json
+-rw------- 1 root root  793 Mar  8 09:32 openclaw.json.bak
+-rw------- 1 root root  287 Mar  8 09:06 openclaw.json.bak.1
+drwxr-xr-x 4 root root 4096 Mar  8 09:32 workspace
+--- END ---
