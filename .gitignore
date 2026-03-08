@@ -4,3 +4,9 @@ venv/
 **/*.pyc
 tmp/
 .DS_Store
+backups/workspaces/**/venv/
+backups/workspaces/**/logs/
+backups/workspaces/**/memory/
+workspaces_backup_remote_vps.tar.gz
+.env
+*.env
